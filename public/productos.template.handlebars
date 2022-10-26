@@ -1,0 +1,15 @@
+
+
+{{#if productos.length}}
+    {{#each productos}}
+    <div class="producto">
+        <img src='{{  this.url }}' alt='{{ this.nombre }}'>
+        <div class="info">
+            <p class='nombre'> {{ this.nombre }} </p>
+            <p class='precio'> $ {{ this.precio }} </p>
+        </div>
+    </div>
+    {{/each}}
+  {{else}}
+  <p id="products_empty">No posee productos ingresados</p>
+{{/if}}

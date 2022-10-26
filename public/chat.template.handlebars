@@ -1,0 +1,12 @@
+{{#if messages.length}}
+{{#each messages}}
+<div class="mensaje">
+
+    <div class="datos">
+        <p class="email">{{this.nombre}}</p>
+        <p class="time">{{this.time}}</p>
+    </div>
+    <p class="text">{{this.mensaje}}</p>
+</div>
+{{/each}}
+{{/if}}
